@@ -1,0 +1,6 @@
+.svn
+.settings
+.settings/*
+.buildpath
+.project
+.svn/*
