@@ -1,0 +1,97 @@
+@CHARSET "UTF-8";
+body {
+	font-size: 1em;
+	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+	background:#888888;
+}
+#menu{
+	background-color:#ffffff;
+	height:70px;
+	font-size:1em;
+	border:thin solid #51003f;
+}
+#menu a{
+	color:#333333;
+}
+#menu div{
+	float:left;
+	margin:0.5em;
+	text-align:center;
+}
+#menu a:hover{
+	text-decoration:underline;
+}
+#menu img{
+	width:2em;
+}
+#principal{
+	clear:both;
+}
+#registro
+{
+	background:#ffffff;
+	border-style:solid;
+	border-width:1px;
+	border-color:#7d0063;
+	margin:auto;
+	width:700px;
+	text-align: center;
+}
+#registro p{
+	clear:both;
+	margin:auto;
+	width:500px;
+	margin-bottom:1em;
+	
+}
+#registro label{
+	display:block;
+	float:left;
+	width:225px;
+	margin-right:25px;
+	text-align:right;
+}
+#registro input{
+	float:left;
+}
+#devel{
+	clear:both;
+	margin-top:2em;
+	background-color:#7d0063;
+	color:#ffffff;
+	font-size: 0.8em;
+	text-align: right;
+	color: #ffffff;
+	padding:10px;
+	font-family: 'Reenie Beanie', arial, serif;
+}
+#devel a{
+	color:#ffffff;
+}
+.ok
+{
+	font-size:small;
+	color:#006400;
+}
+.ko
+{
+	font-size:small;
+	color:#ff0000;
+}
+.cumplehoy, .cumplehoy a, .cumplehoy td{
+	background:#cc0000;
+	color:#ffffff;
+}
+.cumpletomorrow, .cumpletomorrow a, .cumpletomorrow td{
+	background:#00cc00;
+	color:#ffffff;
+}
+.par
+{
+	background:#eeeeee;
+}
+.impar
+{
+	background:#dddddd;
+}
+
