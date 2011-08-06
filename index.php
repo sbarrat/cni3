@@ -4,9 +4,9 @@
  * 
  * Redirecciona a public/index.php, esta hecho por compatibilidad
  * 
- * PHP Version 5.1.4
+ * PHP Version 5.3
  * 
- * @author Ruben Lacasa Mas <ruben@ensenalia.com>
+ * @author Ruben Lacasa Mas <rubendx@gmail.com>
  * @version 3.0
  * 
  */

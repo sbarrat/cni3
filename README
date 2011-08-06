@@ -4,4 +4,11 @@ http://sbarrat.wordpress.com
 01-08-2011
 
 Adaptación de la aplicación que estado desarrollando durante años para
-la gestión de un centro de negocios
+la gestión de un centro de negocios.
+
+La base de datos en un principio fue una adaptacion de una base
+desarrollada en Access, migrada a MySQL y despues agregadas
+tablas a esa nueva base de datos. En las primeras versiones, ese inconveniente se solvento, creando una tabla alias, en la cual se pasaban los parametros
+de las tablas y generaban los formularios.
+
+Con esta versión de la aplicacion quiero readaptarla totalmente, cambiando prototype por jQuery, actualizando a la versión de PHP a 5.3, eliminar codigo repetido y cambiar el html utilizado a HTML5 y CSS3

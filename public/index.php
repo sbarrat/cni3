@@ -6,25 +6,17 @@
  * iniciado la session se mostrara el entrono de trabajo, si no saldra el
  * formulario de acceso
  * 
- * PHP Version 5.1.4
+ * PHP Version 5.3
  * 
  * @author Ruben Lacasa Mas <rubendx@gmail.com>
  * @version 3.0
  * 
- * FIXME! Arreglar todos los enlaces de la nueva estructura
- * FIXME! No salen los clientes de oficina móvil en el listado de clientes para facturación.
- * FIXME! Ana no puede ver el cuadro de E/S, agenda…varias cosas desde su ordenador. Es como si estuviera vacío.
- * FIXME! Habrá que añadir un cliente de dom. integral en el acumulado a 31/12/2007.
- * FIXME! Seprotec: sale duplicado (código actual 2058).
- * FIXME! Salen en cumpleaños los clientes que ya no están activos.
- * FIXME! Modificar contraseña de gestión y poder hacerlo nosotras (si es fácil y cuesta poco).
- * FIXME! Volcar a búsqueda avanzada lo que se ponga en casilla “nombre comercial” de Apdo. proveedores.
- * FIXME! Al sacar los listados filtrando por categorías, a la hora de imprimir, no sale el nombre del primer cliente.
- * FIXME! Al hacer clic en los clientes en la pantalla de avisos deberian abrirse los clientes
  * @todo: Que se pueda modificar la contraseña de acceso
  * @todo: Agregar un nuevo campo a la factura: Nº Pedido
  * @todo: Revision del estilo general
  * @todo: Migracion a jQuery
+ * @todo: Migración a HTML5 y CSS3
+ * @todo: Utilizar estandares de codigo
  * @todo: Eliminar etiquetas no compatibles
  * @todo: Limpieza de todo lo no necesario
  * @todo: Comprimir copias de seguridad (Si es posible)
@@ -53,7 +45,7 @@ if ( isset( $_GET['error'] ) )
 <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.8.custom.min.js"></script>
 <script type="text/javascript" src="js/cni.js"></script>
-<title>Aplicacion Gestión Independencia Centro Negocios 3.0</title>
+<title>Aplicación Gestión Independencia Centro Negocios 3.0</title>
 </head>
 <body>
 <div id="cuerpo">
