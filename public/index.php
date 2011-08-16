@@ -6,7 +6,7 @@
  * iniciado la session se mostrara el entrono de trabajo, si no saldra el
  * formulario de acceso
  * 
- * PHP Version 5.3
+ * PHP Version 5.3+
  * 
  * @author Ruben Lacasa Mas <rubendx@gmail.com>
  * @version 3.0
@@ -26,34 +26,59 @@
 
 session_start(); 
 $mensaje = '';
-if ( isset( $_GET['exit'] ) )
+if ( isset( $_GET[ 'exit' ] ) )
     $mensaje = '<p><span class="ok">Sesion Cerrada</span></p>';
-if ( isset( $_GET['error'] ) )
+if ( isset( $_GET[ 'error' ] ) )
     $mensaje = '<p><span class="ko">Usuario/Contraseña Incorrecta</span></p>';
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="http://fonts.googleapis.com/css?family=Reenie+Beanie"
-	rel="stylesheet" type="text/css" media="screen"></link>
-<link href="estilo/perfectplace.css" rel="stylesheet" type="text/css"
-	media="screen"></link>
-<link href="estilo/custom-theme/jquery-ui-1.8.8.custom.css"
-	rel="stylesheet" type="text/css" media="sceen"></link>
-<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.8.8.custom.min.js"></script>
-<script type="text/javascript" src="js/cni.js"></script>
-<title>Aplicación Gestión Independencia Centro Negocios 3.0</title>
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Reenie+Beanie">
+		<link rel="stylesheet" href="estilo/perfectplace.css">
+		<link rel="stylesheet" href="estilo/custom-theme/jquery-ui-1.8.8.custom.css">
+		<script src="js/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="js/jquery-ui-1.8.8.custom.min.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="js/cni.js" type="text/javascript" charset="utf-8" async defer></script>
+		<title>Aplicación Gestión Independencia Centro Negocios 3.0</title>
+	</head>
+	<body>
+		<section id="container">
+			<header>
+				<img src="imagenes/logotipo2.png" alt="The Perfect Place">
+			</header>
+			<section>
+				<div class='mensaje'><?php echo $mensaje; ?></div>
+				<form action="../application/inc/validacion.php" name="loginUsuario" method="post" accept-charset="utf-8">
+				
+					<p><input type="submit" value="submit"></p>
+				</form>
+			</section>
+			
+		</section>
+		<footer>
+			<a href="http://sbarrat.wordpress.com" target="_blank">
+			devel by &copy;sbarrat::<?php echo date( 'Y' ); ?>
+			</a>
+		</footer>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="cuerpo">
-<div id="registro"><img src="imagenes/logotipo2.png" width="538px"
-	alt="The Perfect Place" />
-    <?php echo $mensaje; ?>
-	<form action="../application/inc/validacion.php" name="loginUsuario"
-	method="post">
+<div id="registro">
 <p><label for="usuario">Usuario:</label> <acronym
 	title="Introduce tu usuario"> <input type="text" id="usuario"
 	name="usuario" tabindex="10" /> </acronym></p>
@@ -67,7 +92,7 @@ if ( isset( $_GET['error'] ) )
 <div id="devel"><a href="http://www.ensenalia.com" target="_blank"> <img
 	src="imagenes/ensenalia.jpg" width="64" alt="ensenalia.com" /> </a> <a
 	href="http://sbarrat.wordpress.org" target="_blank">
-  	&copy;sbarrat::<?php echo date( 'Y' ); ?>
+  
   	</a></div>
 </div>
 </div>
